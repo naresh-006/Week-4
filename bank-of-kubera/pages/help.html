@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help &amp; Support | Bank of Kubera</title>
+    <meta
+      name="description"
+      content="Help and support center for Bank of Kubera."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell" data-page="help">
+      <header class="topbar">
+        <a class="brand-home-link" href="../index.html" aria-label="Bank of Kubera home">
+          <div class="brand-wrap">
+          <div class="brand-mark" aria-label="Bank of Kubera logo">
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+              <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+              <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+            </svg>
+          </div>
+          <div>
+            <p class="brand-label">Bank of Kubera</p>
+          </div>
+          </div>
+        </a>
+
+        <nav class="topbar-nav" aria-label="Main header navigation">
+          <a href="../index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="accounts.html">Accounts</a>
+          <a href="security.html">Security</a>
+          <a href="help.html">Help</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="contact.html" class="btn btn-secondary">Contact Support</a>
+        </div>
+      </header>
+
+      <main class="public-page-main">
+        <section class="page-banner">
+          <p class="eyebrow">Help &amp; Support</p>
+          <h1>Find clear answers for everyday banking.</h1>
+          <p>Browse clear answers for common banking questions and support needs.</p>
+        </section>
+
+        <section class="help-action-grid" aria-label="Support actions">
+          <article class="page-panel help-action-card">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Transaction support</p>
+                <h2>Raise a complaint</h2>
+              </div>
+              <span class="action-badge">01</span>
+            </div>
+            <p>Report an unfamiliar charge, delayed transfer, or payment issue for review.</p>
+            <form id="complaint-form" class="form-grid" novalidate>
+              <div class="form-group">
+                <label for="complaint-transaction">Transaction ID</label>
+                <input id="complaint-transaction" type="text" placeholder="e.g. TXN-10482" />
+              </div>
+              <div class="form-group">
+                <label for="complaint-reason">Issue type</label>
+                <select id="complaint-reason">
+                  <option value="">Choose an issue</option>
+                  <option>Unrecognized transaction</option>
+                  <option>Payment was delayed</option>
+                  <option>Incorrect amount</option>
+                  <option>Transfer issue</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="complaint-details">Tell us what happened</label>
+                <textarea id="complaint-details" rows="3" placeholder="Add a few details"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit complaint</button>
+            </form>
+            <div id="complaint-status" class="form-status" role="status" aria-live="polite"></div>
+          </article>
+
+          <article class="page-panel help-action-card bot-card">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Kubera Assist</p>
+                <h2>Ask the support bot</h2>
+              </div>
+              <span class="bot-pulse" aria-label="Bot online"></span>
+            </div>
+            <div id="support-bot-messages" class="bot-messages" aria-live="polite">
+              <div class="bot-message bot-message--bot">Hi. Ask me about cards, transfers, payments, or login.</div>
+            </div>
+            <div class="bot-prompts" aria-label="Suggested questions">
+              <button type="button" data-bot-prompt="How do I report a transaction?">Report a transaction</button>
+              <button type="button" data-bot-prompt="How long does a transfer take?">Transfer timing</button>
+              <button type="button" data-bot-prompt="I forgot my password">Forgot password</button>
+            </div>
+            <form id="support-bot-form" class="bot-input-row">
+              <input id="support-bot-input" type="text" placeholder="Ask Kubera Assist" autocomplete="off" />
+              <button type="submit" class="btn btn-primary" aria-label="Send message">Send</button>
+            </form>
+          </article>
+        </section>
+
+        <section class="page-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow eyebrow-dark">Frequently asked questions</p>
+              <h2>Answers for you</h2>
+            </div>
+          </div>
+          <div id="help-faq-list" class="faq-list" aria-live="polite"></div>
+        </section>
+
+        <section class="support-cta">
+          <div>
+            <p class="eyebrow">Still need help?</p>
+            <h2>Reach the support team.</h2>
+            <p>Send a message through the local Contact Us form. It does not connect to a real support system.</p>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

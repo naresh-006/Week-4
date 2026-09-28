@@ -1,0 +1,24 @@
+[
+  {
+    "id": "loan-001",
+    "name": "Home Improvement Loan",
+    "type": "Personal",
+    "principal": 150000,
+    "paid": 42000,
+    "balance": 108000,
+    "interestRate": 7.4,
+    "currency": "INR",
+    "status": "Active"
+  },
+  {
+    "id": "loan-002",
+    "name": "Education Advance",
+    "type": "Education",
+    "principal": 90000,
+    "paid": 26000,
+    "balance": 64000,
+    "interestRate": 5.6,
+    "currency": "INR",
+    "status": "Active"
+  }
+]

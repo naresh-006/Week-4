@@ -1,0 +1,86 @@
+[
+  {
+    "id": "search-account-001",
+    "category": "Accounts",
+    "title": "Account overview",
+    "description": "Review balances, available funds, masked numbers, and account status.",
+    "page": "accounts.html"
+  },
+  {
+    "id": "search-account-002",
+    "category": "Accounts",
+    "title": "Transfer between accounts",
+    "description": "Open the transfer workflow for your accounts.",
+    "page": "transfer.html"
+  },
+  {
+    "id": "search-card-001",
+    "category": "Cards",
+    "title": "Credit card portfolio",
+    "description": "Review card balances, available credit, rewards, and benefits.",
+    "page": "cards.html"
+  },
+  {
+    "id": "search-card-002",
+    "category": "Cards",
+    "title": "Card transactions",
+    "description": "View recent card activity and masked card details.",
+    "page": "cards.html"
+  },
+  {
+    "id": "search-loan-001",
+    "category": "Loans",
+    "title": "Loan information",
+    "description": "Explore educational personal, home, auto, and education loan examples.",
+    "page": "loans.html"
+  },
+  {
+    "id": "search-loan-002",
+    "category": "Loans",
+    "title": "Repayment planning",
+    "description": "Read loan planning information without an application flow.",
+    "page": "loans.html"
+  },
+  {
+    "id": "search-transfer-001",
+    "category": "Transfers",
+    "title": "Transfer money",
+    "description": "Review and confirm a transfer between your accounts.",
+    "page": "transfer.html"
+  },
+  {
+    "id": "search-transfer-002",
+    "category": "Transfers",
+    "title": "Transaction history",
+    "description": "Search account transactions with local filters.",
+    "page": "transactions.html"
+  },
+  {
+    "id": "search-security-001",
+    "category": "Security",
+    "title": "Security Center",
+    "description": "Review password safety, fraud awareness, login activity, and security controls.",
+    "page": "security.html"
+  },
+  {
+    "id": "search-security-002",
+    "category": "Security",
+    "title": "Login activity",
+    "description": "View recent devices and locations used in your session.",
+    "page": "security.html"
+  },
+  {
+    "id": "search-help-001",
+    "category": "Help",
+    "title": "Frequently asked questions",
+    "description": "Search local help topics for login, account, payment, card, and security guidance.",
+    "page": "help.html"
+  },
+  {
+    "id": "search-help-002",
+    "category": "Help",
+    "title": "Contact support",
+    "description": "Open the support form for questions about your account.",
+    "page": "contact.html"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "notification-004",
+    "title": "Bank service fee charged",
+    "message": "A monthly account service fee of ₹350 was posted today.",
+    "type": "warning",
+    "date": "2026-09-23",
+    "read": false
+  },
+  {
+    "id": "notification-001",
+    "title": "Salary deposit received",
+    "message": "Your salary deposit of ₹96,000 has been processed.",
+    "type": "success",
+    "date": "2026-09-01",
+    "read": false
+  },
+  {
+    "id": "notification-002",
+    "title": "Bill reminder",
+    "message": "City Utilities payment is due on 2026-09-25.",
+    "type": "warning",
+    "date": "2026-09-18",
+    "read": false
+  },
+  {
+    "id": "notification-003",
+    "title": "Security check",
+    "message": "Your login activity was reviewed successfully.",
+    "type": "info",
+    "date": "2026-09-20",
+    "read": true
+  }
+]

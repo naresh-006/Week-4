@@ -1,0 +1,20 @@
+[
+  {
+    "id": "investment-001",
+    "name": "Growth Mutual Fund",
+    "type": "Mutual Fund",
+    "value": 785000,
+    "changePercent": 12.8,
+    "currency": "INR",
+    "status": "Growing"
+  },
+  {
+    "id": "investment-002",
+    "name": "Kubera Equity Index",
+    "type": "ETF",
+    "value": 245000,
+    "changePercent": 8.4,
+    "currency": "INR",
+    "status": "Stable"
+  }
+]

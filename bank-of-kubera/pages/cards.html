@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards | Bank of Kubera</title>
+    <meta
+      name="description"
+      content="Credit card management overview for Bank of Kubera."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell" data-page="cards">
+      <header class="topbar">
+        <a class="brand-home-link" href="../index.html" aria-label="Bank of Kubera home">
+          <div class="brand-wrap">
+          <div class="brand-mark" aria-label="Bank of Kubera logo">
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+              <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+              <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+            </svg>
+          </div>
+          <div>
+            <p class="brand-label">Bank of Kubera</p>
+          </div>
+          </div>
+        </a>
+
+        <nav class="topbar-nav" aria-label="Main header navigation">
+          <a href="../index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="accounts.html">Accounts</a>
+          <a href="cards.html">Cards</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="login.html" class="btn btn-secondary">Sign In</a>
+        </div>
+      </header>
+
+      <main class="public-page-main cards-page">
+        <section class="cards-hero">
+          <div class="cards-hero-copy">
+            <p class="eyebrow">Your wallet</p>
+            <h1>Choose the card that fits the moment.</h1>
+            <p>Explore debit and credit card designs, benefits, rewards, balances, and recent activity.</p>
+            <a class="cards-hero-link" href="#card-add-form">Add a card reference <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="cards-hero-art" aria-hidden="true">
+            <div class="hero-wallet-card">
+              <div class="hero-card-top"><span class="hero-card-mark">K</span><span class="hero-card-type">KUBERA · EVERYDAY</span></div>
+              <div class="hero-card-chip"></div>
+              <div class="hero-card-number">•••• &nbsp; •••• &nbsp; •••• &nbsp; 4821</div>
+              <div class="hero-card-bottom"><span>YOUR NEXT CHAPTER</span><span class="hero-card-network">●●</span></div>
+            </div>
+            <span class="hero-art-caption">A little more in your corner.</span>
+          </div>
+        </section>
+
+        <div class="cards-workspace">
+          <section class="cards-collection" aria-labelledby="your-cards-title">
+            <div class="cards-section-heading">
+              <div>
+                <p class="eyebrow eyebrow-dark">Card overview</p>
+                <h2 id="your-cards-title">Your cards</h2>
+              </div>
+              <span class="cards-count-label">WALLET</span>
+            </div>
+
+            <div id="cards-grid" class="cards-grid" aria-live="polite"></div>
+          </section>
+
+          <section class="cards-add-panel" aria-labelledby="add-card-title">
+            <div class="cards-section-heading cards-add-heading">
+            <div>
+              <p class="eyebrow eyebrow-dark">Make it yours</p>
+              <h2 id="add-card-title">Add a card</h2>
+            </div>
+          </div>
+            <p class="cards-add-intro">Keep a familiar label for the cards in your wallet.</p>
+            <form id="card-add-form" class="form-grid card-add-form">
+              <div class="form-group">
+                <label for="card-type">Card type</label>
+                <select id="card-type" name="cardType" required>
+                  <option value="Debit">Debit</option>
+                  <option value="Credit">Credit</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="card-label">Card label</label>
+                <input id="card-label" name="label" type="text" minlength="2" maxlength="40" placeholder="Everyday debit" required />
+              </div>
+              <div class="form-group">
+                <label for="card-last-four">Last four digits</label>
+                <input id="card-last-four" name="lastFour" type="text" inputmode="numeric" autocomplete="off" minlength="4" maxlength="4" pattern="[0-9]{4}" placeholder="1234" aria-describedby="card-add-note card-security-note" required />
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Add card reference <span aria-hidden="true">↗</span></button>
+              </div>
+            </form>
+            <p id="card-security-note" class="cards-security-note"><span aria-hidden="true">●</span> Local reference only. Never enter a full card number or CVV.</p>
+            <div id="card-add-note" class="success-message" role="status" aria-live="polite"></div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

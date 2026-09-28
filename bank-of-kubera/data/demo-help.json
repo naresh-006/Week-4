@@ -1,0 +1,74 @@
+[
+  {
+    "id": "help-login-001",
+    "category": "Login help",
+    "question": "What are the login credentials?",
+    "answer": "Use the provided user ID and password. This service does not connect to a real authentication service."
+  },
+  {
+    "id": "help-login-002",
+    "category": "Login help",
+    "question": "What should I do if login does not work?",
+    "answer": "Check that both values are entered exactly, then refresh the page. Account recovery is not available through this service."
+  },
+  {
+    "id": "help-account-001",
+    "category": "Account help",
+    "question": "Where can I view my account balances?",
+    "answer": "Open the Accounts page to review account balances, available funds, masked numbers, and status details."
+  },
+  {
+    "id": "help-account-002",
+    "category": "Account help",
+    "question": "Can I open or close a real account here?",
+    "answer": "No. This service does not open, close, or modify accounts."
+  },
+  {
+    "id": "help-payment-001",
+    "category": "Payment help",
+    "question": "How does bill payment work?",
+    "answer": "Choose a biller and account, enter an amount, review the details, and confirm the payment."
+  },
+  {
+    "id": "help-payment-002",
+    "category": "Payment help",
+    "question": "Are payments sent to real billers?",
+    "answer": "Payments are reviewed and confirmed through the Bill Pay workflow."
+  },
+  {
+    "id": "help-card-001",
+    "category": "Card help",
+    "question": "Where can I review my card benefits?",
+    "answer": "Open the Credit Cards page to review card designs, masked numbers, benefits, rewards, balances, and recent activity."
+  },
+  {
+    "id": "help-card-002",
+    "category": "Card help",
+    "question": "Can I request a real card?",
+    "answer": "No. The card page is a visual overview and does not request, activate, or manage a real card."
+  },
+  {
+    "id": "help-security-001",
+    "category": "Security help",
+    "question": "Does the security toggle change a real setting?",
+    "answer": "The two-factor control updates your security preference during the current session."
+  },
+  {
+    "id": "help-security-002",
+    "category": "Security help",
+    "question": "What should I do about a suspicious message?",
+    "answer": "Do not share passwords or one-time codes. Use an official support channel to verify the request, and review the Security Center guidance."
+  },
+  {
+    "id": "help-support-001",
+    "category": "Contact support",
+    "question": "How can I contact support?",
+    "answer": "Use the Contact Us page to complete the support form. It displays a confirmation and does not send a message."
+  },
+  {
+    "id": "help-support-002",
+    "category": "Contact support",
+    "question": "What support hours are shown?",
+    "answer": "The support listing shows Monday to Saturday, 9:00 AM to 6:00 PM, with a phone number and email address."
+  }
+]

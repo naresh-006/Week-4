@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Center | Bank of Kubera</title>
+    <meta
+      name="description"
+      content="Security awareness and account controls for Bank of Kubera."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell" data-page="security">
+      <header class="topbar">
+        <a class="brand-home-link" href="../index.html" aria-label="Bank of Kubera home">
+          <div class="brand-wrap">
+          <div class="brand-mark" aria-label="Bank of Kubera logo">
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+              <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+              <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+            </svg>
+          </div>
+          <div>
+            <p class="brand-label">Bank of Kubera</p>
+          </div>
+          </div>
+        </a>
+
+        <nav class="topbar-nav" aria-label="Main header navigation">
+          <a href="../index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="accounts.html">Accounts</a>
+          <a href="profile.html">Profile</a>
+          <a href="security.html">Security</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="contact.html" class="btn btn-secondary">Contact Support</a>
+        </div>
+      </header>
+
+      <main class="public-page-main">
+        <section class="page-banner">
+          <p class="eyebrow">Security Center</p>
+          <h1>Build safer banking habits.</h1>
+          <p>Explore security guidance and controls designed for a thoughtful banking interface.</p>
+        </section>
+
+        <section class="security-grid">
+          <article class="page-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Secure login</p>
+                <h2>Protect your sign-in</h2>
+              </div>
+            </div>
+            <div class="security-note">
+              <p>Use a unique password, check the web address before signing in, and avoid entering credentials on shared devices.</p>
+            </div>
+            <ul class="security-checklist">
+              <li>Choose a long, unique password for every service.</li>
+              <li>Review device and location details after each sign-in.</li>
+              <li>Contact support when an activity alert looks unfamiliar.</li>
+            </ul>
+          </article>
+
+          <article class="page-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Two-factor authentication</p>
+                <h2>Extra sign-in step</h2>
+              </div>
+              <span class="account-tag">Protected</span>
+            </div>
+            <div class="security-control-row">
+              <div>
+                <strong>Verification prompts</strong>
+                <span>Toggle this visual example to preview a protected state.</span>
+              </div>
+              <label class="switch-control">
+                <input id="two-factor-toggle" type="checkbox" aria-label="Enable two-factor authentication" />
+                <span aria-hidden="true"></span>
+              </label>
+            </div>
+            <p id="two-factor-status" class="form-status" role="status" aria-live="polite">Two-factor authentication is currently off.</p>
+          </article>
+        </section>
+
+        <section class="page-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow eyebrow-dark">Login activity</p>
+              <h2>Recent sign-ins</h2>
+            </div>
+          </div>
+          <div id="login-activity-list" class="activity-list" aria-live="polite"></div>
+        </section>
+
+        <section class="security-grid">
+          <article class="page-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Fraud awareness</p>
+                <h2>Pause before you respond</h2>
+              </div>
+            </div>
+            <div class="status status-warning">Never share passwords, one-time codes, or full card details through an unexpected message.</div>
+            <p class="security-copy">Fraudsters may create urgency or impersonate trusted organizations. Use an official support channel to verify unusual requests.</p>
+          </article>
+
+          <article class="page-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Security support</p>
+                <h2>Need a hand?</h2>
+              </div>
+            </div>
+            <p class="security-copy">Use the support form to describe a security concern.</p>
+            <a href="contact.html" class="btn btn-primary">Contact Support</a>
+          </article>
+        </section>
+
+      </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

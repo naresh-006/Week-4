@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Bank of Kubera</title>
+    <meta
+      name="description"
+      content="Learn about Bank of Kubera and its modern digital banking experience."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand-home-link" href="../index.html" aria-label="Bank of Kubera home">
+          <div class="brand-wrap">
+          <div class="brand-mark" aria-label="Bank of Kubera logo">
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+              <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+              <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+            </svg>
+          </div>
+          <div>
+            <p class="brand-label">Bank of Kubera</p>
+          </div>
+          </div>
+        </a>
+
+        <button class="mobile-menu-toggle about-menu-toggle" id="about-menu-toggle" type="button" aria-expanded="false" aria-controls="about-navigation" aria-label="Open navigation">
+          <span aria-hidden="true">&#9776;</span>
+        </button>
+
+        <nav class="topbar-nav" id="about-navigation" aria-label="Main header navigation">
+          <a href="../index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="loans.html">Loans</a>
+          <a href="help.html">FAQ</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="secondary-btn" href="login.html">Sign In</a>
+        </div>
+      </header>
+
+      <main class="public-page-main about-page-main">
+        <section class="about-hero">
+          <div class="about-hero-copy">
+            <p class="eyebrow">A clearer way to bank</p>
+            <h1>Designed to make everyday banking feel clear and confident.</h1>
+            <p class="about-hero-lead">
+              Bank of Kubera is a digital banking concept built around a simple idea: your money should be easier to understand and manage.
+            </p>
+            <div class="about-hero-actions">
+              <a class="primary-btn" href="login.html">Explore the experience</a>
+              <a class="about-text-link" href="contact.html">Talk to our team <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <p class="about-demo-note">A front-end concept. No real accounts or financial services are provided.</p>
+          </div>
+
+          <div class="about-product" aria-label="Illustration of the Bank of Kubera account overview">
+            <div class="about-product-topline">
+              <span class="about-product-brand"><span class="about-product-dot"></span> Kubera</span>
+              <span class="about-product-label">ACCOUNT OVERVIEW</span>
+            </div>
+            <div class="about-product-balance">
+              <span>Total balance</span>
+              <strong>$24,680<span>.50</span></strong>
+              <span class="about-balance-change"><span aria-hidden="true">&#8593;</span> 2.4% this month</span>
+            </div>
+            <div class="about-product-chart" aria-hidden="true">
+              <div class="about-chart-lines"><i></i><i></i><i></i></div>
+              <svg viewBox="0 0 420 116" preserveAspectRatio="none">
+                <path class="about-chart-fill" d="M0 93 C32 87 39 69 72 77 S116 91 146 64 S190 75 219 50 S267 68 294 43 S343 52 370 25 S401 37 420 12 V116 H0Z" />
+                <path class="about-chart-line" d="M0 93 C32 87 39 69 72 77 S116 91 146 64 S190 75 219 50 S267 68 294 43 S343 52 370 25 S401 37 420 12" />
+              </svg>
+              <div class="about-chart-labels"><span>May 01</span><span>May 08</span><span>May 15</span><span>May 22</span><span>May 31</span></div>
+            </div>
+            <div class="about-product-bottom">
+              <div><span class="about-account-icon">$</span><span><strong>Everyday checking</strong><small>•••• 2048</small></span></div>
+              <strong>$8,420.50</strong>
+            </div>
+            <span class="about-product-caption">Illustrative interface</span>
+          </div>
+        </section>
+
+        <section class="about-story" aria-labelledby="about-mission-title">
+          <div class="about-section-heading">
+            <p class="eyebrow">Our mission</p>
+            <h2 id="about-mission-title">Good banking starts with understanding.</h2>
+          </div>
+          <div class="about-story-copy">
+            <p>We imagined a banking experience where the important things are easy to find, everyday actions feel straightforward, and the details never get in the way.</p>
+            <p>This concept brings accounts, payments, and financial tools into one calm, accessible interface. Every screen is designed to help people feel more informed and in control.</p>
+          </div>
+        </section>
+
+        <section class="about-values" aria-label="Our values">
+          <details class="about-value">
+            <summary>
+              <span class="about-value-number">01</span>
+              <span class="about-value-title">Clarity</span>
+              <span class="about-value-toggle" aria-hidden="true"></span>
+            </summary>
+            <p>Balances, activity, and next steps are organized so the important details are easy to understand.</p>
+          </details>
+          <details class="about-value">
+            <summary>
+              <span class="about-value-number">02</span>
+              <span class="about-value-title">Control</span>
+              <span class="about-value-toggle" aria-hidden="true"></span>
+            </summary>
+            <p>Everyday banking tasks have a clear home, bringing accounts and payments into one experience.</p>
+          </details>
+          <details class="about-value">
+            <summary>
+              <span class="about-value-number">03</span>
+              <span class="about-value-title">Trust</span>
+              <span class="about-value-toggle" aria-hidden="true"></span>
+            </summary>
+            <p>Thoughtful design puts transparency and a sense of security at the heart of each interaction.</p>
+          </details>
+        </section>
+
+        <section class="about-next-step">
+          <div>
+            <p class="eyebrow">See it for yourself</p>
+            <h2>Banking, with a little more breathing room.</h2>
+          </div>
+          <a class="about-next-link" href="contact.html">Get in touch <span aria-hidden="true">&rarr;</span></a>
+        </section>
+      </main>
+
+      <footer class="footer public-footer">
+        <div>
+          <div class="footer-brand-wrap">
+            <div class="footer-brand-mark" aria-label="Bank of Kubera logo">
+              <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+                <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+                <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+                <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+              </svg>
+            </div>
+            <p class="footer-brand">Bank of Kubera</p>
+          </div>
+          <p class="disclaimer"></p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="security.html">Security Center</a>
+          <a href="help.html">Support</a>
+        </nav>
+      </footer>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "id": "customer-001",
+  "customerId": "DEMO-1001",
+  "displayName": "Aarav Sharma",
+  "customerType": "Customer",
+  "status": "Active",
+  "email": "aarav.sharma@bankofkubera.com",
+  "phone": "+91 98XXXXXXX2",
+  "address": "Kubera Residency, Bengaluru",
+  "preferredLanguage": "English",
+  "isDemo": true
+}

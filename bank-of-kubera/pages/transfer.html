@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfer | Bank of Kubera</title>
+    <meta
+      name="description"
+      content="Money transfer experience for Bank of Kubera."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell" data-page="transfer">
+      <header class="topbar">
+        <a class="brand-home-link" href="../index.html" aria-label="Bank of Kubera home">
+          <div class="brand-wrap">
+          <div class="brand-mark" aria-label="Bank of Kubera logo">
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+              <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+              <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+            </svg>
+          </div>
+          <div>
+            <p class="brand-label">Bank of Kubera</p>
+          </div>
+          </div>
+        </a>
+
+        <nav class="topbar-nav" aria-label="Main header navigation">
+          <a href="../index.html">Home</a>
+          <a href="accounts.html">Accounts</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="transfer.html">Transfers</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="login.html" class="btn btn-secondary">Sign In</a>
+        </div>
+      </header>
+
+      <main class="public-page-main">
+        <section class="page-banner transfer-banner">
+          <p class="eyebrow">Transfer</p>
+          <h1>Send money securely</h1>
+          <p>Send money securely between your accounts.</p>
+        </section>
+
+        <section class="page-panel transfer-journey">
+          <div class="transfer-intro">
+            <div>
+              <p class="eyebrow eyebrow-dark">Move money</p>
+              <h2>Send money with intention</h2>
+              <p class="transfer-subtitle">Choose your route, set the amount, and review every detail before confirming.</p>
+            </div>
+            <div class="transfer-steps" aria-label="Transfer steps">
+              <span class="is-current"><b>1</b> Details</span>
+              <span><b>2</b> Review</span>
+              <span><b>3</b> Done</span>
+            </div>
+          </div>
+
+          <form id="transfer-form" class="transfer-form" novalidate>
+            <div class="field-grid">
+              <div class="field-group">
+                <label for="from-account">From account</label>
+                <select id="from-account" required></select>
+              </div>
+
+              <div class="field-group">
+                <label for="to-account">To account</label>
+                <select id="to-account" required></select>
+              </div>
+
+              <div class="field-group">
+                <label for="transfer-amount">Amount</label>
+                <input id="transfer-amount" type="number" min="1" step="0.01" placeholder="Enter amount" required />
+              </div>
+
+              <div class="field-group">
+                <label for="transfer-date">Date</label>
+                <input id="transfer-date" type="date" required />
+              </div>
+
+              <div class="field-group field-group--full">
+                <label for="transfer-description">Description</label>
+                <textarea id="transfer-description" rows="3" placeholder="Add a short description" required></textarea>
+              </div>
+            </div>
+
+            <div id="transfer-error" class="form-error" role="alert" aria-live="polite"></div>
+
+            <div class="form-actions transfer-actions">
+              <button type="reset" class="btn btn-ghost">Reset</button>
+              <button type="submit" class="btn btn-primary">Review Transfer</button>
+            </div>
+          </form>
+
+          <div id="transfer-review" class="transfer-review hidden" aria-live="polite"></div>
+
+          <div id="transfer-success" class="success-message transfer-success" aria-live="polite"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

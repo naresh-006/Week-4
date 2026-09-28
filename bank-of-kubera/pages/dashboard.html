@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Bank of Kubera</title>
+    <meta
+      name="description"
+      content="Dashboard for Bank of Kubera."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell" data-page="dashboard">
+      <header class="topbar">
+        <a class="brand-home-link" href="../index.html" aria-label="Bank of Kubera home">
+          <div class="brand-wrap">
+          <div class="brand-mark" aria-label="Bank of Kubera logo">
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+              <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+              <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+            </svg>
+          </div>
+          <div>
+            <p class="brand-label">Bank of Kubera</p>
+          </div>
+          </div>
+        </a>
+
+        <nav class="topbar-nav" aria-label="Main header navigation">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="accounts.html">Accounts</a>
+          <a href="transfer.html">Transfers</a>
+          <a href="cards.html">Cards</a>
+          <a href="statements.html">Statements</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" id="logout-btn" class="btn btn-secondary">Logout</button>
+        </div>
+      </header>
+
+      <main class="public-page-main dashboard-shell">
+        <section class="page-banner">
+          <p class="eyebrow">Welcome back</p>
+          <h1 id="dashboard-greeting">Customer overview</h1>
+          <p id="dashboard-disclaimer">Your dashboard is ready with your latest account activity.</p>
+        </section>
+
+        <section id="account-summary-cards" class="dashboard-cards" aria-label="Account summary"></section>
+
+        <section class="dashboard-grid dashboard-grid--two dashboard-detail-row">
+          <article class="dashboard-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Account details</p>
+                <h2>Your money at a glance</h2>
+              </div>
+              <a href="accounts.html" class="panel-link">View all</a>
+            </div>
+            <div id="dashboard-account-details" class="account-detail-list" aria-live="polite"></div>
+          </article>
+
+          <article class="dashboard-panel dashboard-card-showcase">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Card wallet</p>
+                <h2>Ready when you are</h2>
+              </div>
+              <a href="cards.html" class="panel-link">Manage cards</a>
+            </div>
+            <div id="dashboard-card-visual" aria-live="polite"></div>
+          </article>
+        </section>
+
+        <section class="dashboard-grid">
+          <article class="dashboard-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Quick actions</p>
+                <h2>Efficiency tools</h2>
+              </div>
+            </div>
+            <div class="quick-actions" aria-label="Quick actions">
+              <a href="transfer.html" class="btn btn-primary">Transfer Money</a>
+              <a href="bills.html" class="btn btn-secondary">Pay Bill</a>
+              <a href="transactions.html" class="btn btn-ghost">View Transactions</a>
+              <a href="cards.html" class="btn btn-ghost">Manage Cards</a>
+            </div>
+          </article>
+
+          <article class="dashboard-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Financial snapshot</p>
+                <h2>At a glance</h2>
+              </div>
+            </div>
+              <div class="mini-metrics" aria-label="Financial overview">
+                <div>
+                  <span>Monthly inflow</span>
+                  <strong id="metric-inflow">Loading...</strong>
+                </div>
+                <div>
+                  <span>Monthly outflow</span>
+                  <strong id="metric-outflow">Loading...</strong>
+                </div>
+                <div>
+                  <span>Investments</span>
+                  <strong id="metric-investments">Loading...</strong>
+                </div>
+                <div>
+                  <span>Loan balance</span>
+                  <strong id="metric-loans">Loading...</strong>
+                </div>
+              </div>
+          </article>
+        </section>
+
+        <section class="dashboard-grid dashboard-grid--two">
+          <article class="dashboard-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Recent activity</p>
+                <h2>Transactions</h2>
+              </div>
+            </div>
+            <ul id="recent-transactions" class="transaction-list" aria-live="polite"></ul>
+          </article>
+
+          <article class="dashboard-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Alerts</p>
+                <h2>Notifications</h2>
+              </div>
+            </div>
+            <ul id="notifications-list" class="notification-list" aria-live="polite"></ul>
+          </article>
+        </section>
+
+      </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

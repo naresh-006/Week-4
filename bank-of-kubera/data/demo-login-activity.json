@@ -1,0 +1,18 @@
+[
+  {
+    "id": "login-001",
+    "userId": "demo-user",
+    "device": "Chrome on Windows",
+    "location": "Bengaluru, IN",
+    "timestamp": "2026-09-23T09:42:00Z",
+    "status": "Success"
+  },
+  {
+    "id": "login-002",
+    "userId": "demo-user",
+    "device": "Safari on iPhone",
+    "location": "Mumbai, IN",
+    "timestamp": "2026-09-22T18:30:00Z",
+    "status": "Success"
+  }
+]

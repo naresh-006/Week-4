@@ -1,0 +1,32 @@
+[
+  {
+    "id": "account-001",
+    "type": "Checking",
+    "name": "Checking Account",
+    "maskedNumber": "****1234",
+    "balance": 148120,
+    "availableBalance": 142500,
+    "currency": "INR",
+    "status": "Active"
+  },
+  {
+    "id": "account-002",
+    "type": "Savings",
+    "name": "Savings Account",
+    "maskedNumber": "****5678",
+    "balance": 76880,
+    "availableBalance": 76880,
+    "currency": "INR",
+    "status": "Active"
+  },
+  {
+    "id": "account-003",
+    "type": "Credit",
+    "name": "Credit Card Account",
+    "maskedNumber": "****9012",
+    "balance": 15240,
+    "availableBalance": 344760,
+    "currency": "INR",
+    "status": "Active"
+  }
+]

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile &amp; Settings | Bank of Kubera</title>
+    <meta
+      name="description"
+      content="Profile and settings for Bank of Kubera."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell" data-page="profile">
+      <header class="topbar">
+        <a class="brand-home-link" href="../index.html" aria-label="Bank of Kubera home">
+          <div class="brand-wrap">
+          <div class="brand-mark" aria-label="Bank of Kubera logo">
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+              <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+              <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+            </svg>
+          </div>
+          <div>
+            <p class="brand-label">Bank of Kubera</p>
+          </div>
+          </div>
+        </a>
+
+        <nav class="topbar-nav" aria-label="Main header navigation">
+          <a href="../index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="accounts.html">Accounts</a>
+          <a href="cards.html">Cards</a>
+          <a href="profile.html">Profile</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="login.html" class="btn btn-secondary">Sign In</a>
+        </div>
+      </header>
+
+      <main class="public-page-main">
+        <section class="page-banner">
+          <p class="eyebrow">Profile &amp; Settings</p>
+          <h1>Keep your profile up to date.</h1>
+          <p>Review your customer details and adjust local preferences.</p>
+        </section>
+
+        <section class="profile-layout">
+          <article class="page-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Profile</p>
+                <h2>Customer information</h2>
+              </div>
+              <button type="button" id="profile-edit" class="btn btn-secondary">Edit</button>
+            </div>
+
+            <form id="profile-form" class="profile-form" novalidate>
+              <div class="profile-fields">
+                <div class="field-group">
+                  <label for="profile-name">Name</label>
+                  <input id="profile-name" name="name" type="text" required readonly />
+                </div>
+                <div class="field-group">
+                  <label for="profile-email">Email</label>
+                  <input id="profile-email" name="email" type="email" required readonly />
+                </div>
+                <div class="field-group">
+                  <label for="profile-phone">Phone</label>
+                  <input id="profile-phone" name="phone" type="tel" required readonly />
+                </div>
+                <div class="field-group">
+                  <label for="profile-address">Address</label>
+                  <input id="profile-address" name="address" type="text" required readonly />
+                </div>
+              </div>
+
+              <div class="profile-actions">
+                <button type="submit" id="profile-save" class="btn btn-primary" disabled>Save Changes</button>
+                <button type="button" id="profile-cancel" class="btn btn-ghost" disabled>Cancel</button>
+              </div>
+              <p id="profile-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+
+          <article class="page-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow eyebrow-dark">Account settings</p>
+                <h2>Preferences</h2>
+              </div>
+            </div>
+
+            <div class="settings-list">
+              <div class="setting-row">
+                <div>
+                  <strong>Preferred language</strong>
+                  <span>Choose the language shown in the app.</span>
+                </div>
+                <select id="preferred-language" aria-label="Preferred language">
+                  <option>English</option>
+                  <option>Hindi</option>
+                  <option>Kannada</option>
+                </select>
+              </div>
+              <div class="setting-row">
+                <div>
+                  <strong>Monthly account summary</strong>
+                  <span>Show an account summary in notifications.</span>
+                </div>
+                <label class="switch-control">
+                  <input id="monthly-summary" type="checkbox" aria-label="Monthly account summary" checked />
+                  <span aria-hidden="true"></span>
+                </label>
+              </div>
+              <div class="setting-row">
+                <div>
+                  <strong>Payment reminders</strong>
+                  <span>Display reminders for upcoming bills.</span>
+                </div>
+                <label class="switch-control">
+                  <input id="payment-reminders" type="checkbox" aria-label="Payment reminders" checked />
+                  <span aria-hidden="true"></span>
+                </label>
+              </div>
+              <div class="setting-row">
+                <div>
+                  <strong>Security notifications</strong>
+                  <span>Keep security activity visible.</span>
+                </div>
+                <label class="switch-control">
+                  <input id="security-notifications" type="checkbox" aria-label="Security notifications" checked />
+                  <span aria-hidden="true"></span>
+                </label>
+              </div>
+            </div>
+            <p id="settings-status" class="form-status" role="status" aria-live="polite"></p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

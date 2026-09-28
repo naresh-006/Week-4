@@ -1,0 +1,102 @@
+[
+  {
+    "id": "txn-008",
+    "accountId": "account-001",
+    "type": "Debit",
+    "description": "Monthly bank service fee",
+    "amount": 350,
+    "currency": "INR",
+    "date": "2026-09-23",
+    "status": "Completed"
+  },
+  {
+    "id": "txn-009",
+    "accountId": "account-001",
+    "type": "Credit",
+    "description": "Utility bill refund",
+    "amount": 740,
+    "currency": "INR",
+    "date": "2026-09-22",
+    "status": "Completed"
+  },
+  {
+    "id": "txn-005",
+    "accountId": "account-001",
+    "type": "Debit",
+    "description": "Online grocery order",
+    "amount": 2860,
+    "currency": "INR",
+    "date": "2026-09-21",
+    "status": "Completed"
+  },
+  {
+    "id": "txn-004",
+    "accountId": "account-003",
+    "type": "Debit",
+    "description": "Dining and entertainment",
+    "amount": 4200,
+    "currency": "INR",
+    "date": "2026-09-15",
+    "status": "Pending"
+  },
+  {
+    "id": "txn-001",
+    "accountId": "account-001",
+    "type": "Debit",
+    "description": "Monthly rent payment",
+    "amount": 24000,
+    "currency": "INR",
+    "date": "2026-09-12",
+    "status": "Completed"
+  },
+  {
+    "id": "txn-002",
+    "accountId": "account-001",
+    "type": "Credit",
+    "description": "Salary deposit",
+    "amount": 96000,
+    "currency": "INR",
+    "date": "2026-09-01",
+    "status": "Completed"
+  },
+  {
+    "id": "txn-006",
+    "accountId": "account-001",
+    "type": "Debit",
+    "description": "Electricity bill payment",
+    "amount": 1840,
+    "currency": "INR",
+    "date": "2026-08-30",
+    "status": "Completed"
+  },
+  {
+    "id": "txn-003",
+    "accountId": "account-002",
+    "type": "Credit",
+    "description": "Auto-savings transfer",
+    "amount": 8000,
+    "currency": "INR",
+    "date": "2026-08-28",
+    "status": "Completed"
+  },
+  {
+    "id": "txn-007",
+    "accountId": "account-002",
+    "type": "Credit",
+    "description": "Cashback reward",
+    "amount": 620,
+    "currency": "INR",
+    "date": "2026-08-24",
+    "status": "Completed"
+  },
+  {
+    "id": "txn-010",
+    "accountId": "account-001",
+    "type": "Debit",
+    "description": "ATM cash withdrawal",
+    "amount": 5000,
+    "currency": "INR",
+    "date": "2026-08-21",
+    "status": "Completed"
+  }
+]

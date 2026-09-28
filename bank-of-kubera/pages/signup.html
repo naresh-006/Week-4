@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account | Bank of Kubera</title>
+    <meta
+      name="description"
+      content="Create your Bank of Kubera online banking account."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand-home-link" href="../index.html" aria-label="Bank of Kubera home">
+          <div class="brand-wrap">
+          <div class="brand-mark" aria-label="Bank of Kubera logo">
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+              <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+              <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+            </svg>
+          </div>
+          <div>
+            <p class="brand-label">Bank of Kubera</p>
+          </div>
+          </div>
+        </a>
+        <div class="header-actions">
+          <a href="login.html" class="btn btn-ghost">Sign In</a>
+        </div>
+      </header>
+
+      <main class="public-page-main auth-layout">
+        <section class="page-banner">
+          <div class="access-kicker"><span class="status-dot"></span> Start your journey</div>
+          <h1>Your money, made more capable.</h1>
+          <p>Open your banking workspace and bring everyday finances into one clear view.</p>
+          <div class="access-highlights" aria-label="Account benefits">
+            <div><strong>01</strong><span>One place for every account</span></div>
+            <div><strong>02</strong><span>Simple tools for everyday money</span></div>
+            <div><strong>03</strong><span>Built around your next move</span></div>
+          </div>
+        </section>
+
+        <section class="form-panel">
+          <div class="form-panel-heading">
+            <div>
+              <p class="eyebrow eyebrow-dark">Get started</p>
+              <h3>Create your account</h3>
+            </div>
+            <span class="lock-mark" aria-label="Secure registration" role="img"></span>
+          </div>
+          <p class="form-intro">Tell us a little about yourself to begin.</p>
+          <form id="signup-form" class="form-grid signup-form" novalidate>
+            <div class="form-group">
+              <label for="signup-name">Full name</label>
+              <input id="signup-name" type="text" placeholder="Your full name" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="signup-email">Email address</label>
+              <input id="signup-email" type="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="signup-phone">Mobile number</label>
+              <input id="signup-phone" type="tel" placeholder="Your mobile number" autocomplete="tel" required />
+            </div>
+            <div class="form-group">
+              <label for="signup-password">Create password</label>
+              <input id="signup-password" type="password" placeholder="At least 12 characters" autocomplete="new-password" minlength="12" required />
+            </div>
+            <div class="form-group">
+              <label for="signup-password-confirm">Confirm password</label>
+              <input id="signup-password-confirm" type="password" placeholder="Re-enter your password" autocomplete="new-password" minlength="12" required />
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Continue registration</button>
+            </div>
+          </form>
+          <div id="signup-message" class="success-message" role="status" aria-live="polite"></div>
+          <div class="auth-signup">
+            <span>Already have an account?</span>
+            <a href="login.html" class="btn btn-secondary">Sign in</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

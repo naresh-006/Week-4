@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Bank of Kubera</title>
+    <meta
+      name="description"
+      content="Securely sign in to Bank of Kubera online banking."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand-home-link" href="../index.html" aria-label="Bank of Kubera home">
+          <div class="brand-wrap">
+          <div class="brand-mark" aria-label="Bank of Kubera logo">
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+              <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+              <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+            </svg>
+          </div>
+          <div>
+            <p class="brand-label">Bank of Kubera</p>
+          </div>
+          </div>
+        </a>
+      </header>
+
+      <main class="public-page-main auth-layout">
+        <section class="page-banner">
+          <div class="access-kicker"><span class="status-dot"></span> Secure online banking</div>
+          <h1>Sign in to your banking workspace.</h1>
+          <p>
+            Access your accounts, manage payments, and stay in control of your finances.
+          </p>
+          <div class="access-highlights" aria-label="Banking features">
+            <div>
+              <strong>01</strong>
+              <span>See your money clearly</span>
+            </div>
+            <div>
+              <strong>02</strong>
+              <span>Move money with confidence</span>
+            </div>
+            <div>
+              <strong>03</strong>
+              <span>Stay ahead of every payment</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-panel">
+          <div class="form-panel-heading">
+            <div>
+              <p class="eyebrow eyebrow-dark">Welcome back</p>
+              <h3>Account access</h3>
+            </div>
+            <span class="lock-mark" aria-label="Secure access" role="img"></span>
+          </div>
+          <p class="form-intro">Use your credentials to continue securely.</p>
+          <form id="login-form" class="form-grid" novalidate>
+            <div class="form-group">
+              <label for="demo-id">User ID or email</label>
+              <input id="demo-id" type="text" placeholder="you@example.com" autocomplete="username" required />
+              <small class="login-identifier-hint">Use the email address you registered with. Your display name alone will not work.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="demo-password">Password</label>
+              <input id="demo-password" type="password" placeholder="Password" autocomplete="current-password" required />
+              <a class="forgot-link" id="forgot-password" href="#forgot-password">Forgot password?</a>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Continue</button>
+            </div>
+          </form>
+
+          <div id="login-error" class="form-error" role="alert" aria-live="polite"></div>
+          <div id="forgot-password-message" class="success-message" role="status" aria-live="polite">
+            Password reset is not enabled in this local demo. Contact support if you need help.
+          </div>
+
+          <div class="auth-signup">
+            <span>New to Bank of Kubera?</span>
+            <a href="signup.html" class="btn btn-secondary">Create an account</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

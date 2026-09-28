@@ -1,0 +1,68 @@
+[
+  {
+    "id": "card-001",
+    "cardType": "Debit",
+    "theme": "debit",
+    "name": "Kubera Everyday Debit",
+    "maskedNumber": "**** 9087",
+    "holderName": "AARAV SHARMA",
+    "expiry": "09/30",
+    "network": "Visa Debit",
+    "status": "Active",
+    "balance": 148120,
+    "availableCredit": 148120,
+    "paymentDue": 0,
+    "rewardPoints": 420,
+    "currency": "INR",
+    "benefits": ["Instant balance view", "Everyday spending overview", "Contactless payment design"],
+    "rewards": ["1 point per spend unit", "Monthly spending snapshot"],
+    "recentTransactions": [
+      {"description": "Grocery Market", "type": "Debit", "amount": 3240, "date": "2026-09-22"},
+      {"description": "Salary Credit", "type": "Credit", "amount": 62000, "date": "2026-09-20"}
+    ]
+  },
+  {
+    "id": "card-002",
+    "cardType": "Credit",
+    "theme": "credit",
+    "name": "Kubera Platinum Credit",
+    "maskedNumber": "**** 1452",
+    "holderName": "AARAV SHARMA",
+    "expiry": "12/29",
+    "network": "Mastercard",
+    "status": "Active",
+    "balance": 15240,
+    "availableCredit": 334760,
+    "paymentDue": 4200,
+    "rewardPoints": 1840,
+    "currency": "INR",
+    "benefits": ["Purchase protection", "Reward points overview", "Flexible payment overview"],
+    "rewards": ["2x points on travel", "Quarterly rewards summary"],
+    "recentTransactions": [
+      {"description": "Travel booking", "type": "Debit", "amount": 8200, "date": "2026-09-18"},
+      {"description": "Reward adjustment", "type": "Credit", "amount": 640, "date": "2026-09-16"}
+    ]
+  },
+  {
+    "id": "card-003",
+    "cardType": "Credit",
+    "theme": "travel",
+    "name": "Kubera Horizon Travel",
+    "maskedNumber": "**** 4821",
+    "holderName": "AARAV SHARMA",
+    "expiry": "04/31",
+    "network": "Visa Signature",
+    "status": "Active",
+    "balance": 28400,
+    "availableCredit": 121600,
+    "paymentDue": 6800,
+    "rewardPoints": 3260,
+    "currency": "INR",
+    "benefits": ["Travel rewards illustration", "Lounge access concept", "Foreign spend overview"],
+    "rewards": ["3x points on travel", "Annual travel credit illustration"],
+    "recentTransactions": [
+      {"description": "Hotel booking", "type": "Debit", "amount": 11400, "date": "2026-09-14"},
+      {"description": "Travel reward", "type": "Credit", "amount": 900, "date": "2026-09-12"}
+    ]
+  }
+]

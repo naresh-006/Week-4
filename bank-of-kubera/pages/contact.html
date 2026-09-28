@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Bank of Kubera</title>
+    <meta
+      name="description"
+      content="Contact Bank of Kubera through the online support form."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand-home-link" href="../index.html" aria-label="Bank of Kubera home">
+          <div class="brand-wrap">
+          <div class="brand-mark" aria-label="Bank of Kubera logo">
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+              <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+              <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+            </svg>
+          </div>
+          <div>
+            <p class="brand-label">Bank of Kubera</p>
+          </div>
+          </div>
+        </a>
+
+        <nav class="topbar-nav" aria-label="Main header navigation">
+          <a href="../index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="loans.html">Loans</a>
+          <a href="help.html">FAQ</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="secondary-btn" href="login.html">Sign In</a>
+        </div>
+      </header>
+
+      <main class="public-page-main">
+        <section class="page-banner">
+          <p class="eyebrow">Contact Us</p>
+          <h1>We’re here to help with your banking questions.</h1>
+          <p>
+            Send a message to the Bank of Kubera demo support inbox.
+          </p>
+        </section>
+
+        <section class="contact-layout">
+          <article class="form-panel">
+            <h3>Send a message</h3>
+            <form class="form-grid" id="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="name@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="How can we help?" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us more..." required></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+              </div>
+            </form>
+
+            <div class="success-message" id="success-message" aria-live="polite">
+              Your message has been received.
+            </div>
+          </article>
+
+          <aside class="page-panel">
+            <h3>Support options</h3>
+            <div class="note-box">
+              <p>Phone: +91 90000 00000</p>
+              <p>Email: support@bankofkubera.example</p>
+              <p>Hours: Monday to Saturday, 9:00 AM to 6:00 PM</p>
+            </div>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="footer public-footer">
+        <div>
+          <div class="footer-brand-wrap">
+            <div class="footer-brand-mark" aria-label="Bank of Kubera logo">
+              <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+                <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+                <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+                <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+              </svg>
+            </div>
+            <p class="footer-brand">Bank of Kubera</p>
+          </div>
+          <p class="disclaimer"></p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="security.html">Security Center</a>
+          <a href="help.html">Support</a>
+        </nav>
+      </footer>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank of Kubera</title>
+    <meta
+      name="description"
+      content="Bank of Kubera is an educational banking frontend."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell homepage-shell">
+      <header class="topbar public-header">
+        <a class="brand-home-link" href="index.html" aria-label="Bank of Kubera home">
+          <div class="brand-wrap">
+          <div class="brand-mark" aria-label="Bank of Kubera logo">
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+              <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+              <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+            </svg>
+          </div>
+          <div>
+            <p class="brand-label">Bank of Kubera</p>
+          </div>
+          </div>
+        </a>
+
+        <button class="mobile-menu-toggle home-menu-toggle" id="home-menu-toggle" type="button" aria-expanded="false" aria-controls="home-navigation" aria-label="Open navigation">
+          <span aria-hidden="true">&#9776;</span>
+        </button>
+
+        <nav class="topbar-nav" id="home-navigation" aria-label="Main header navigation">
+          <a href="index.html">Home</a>
+          <a href="pages/about.html">About Us</a>
+          <a href="pages/contact.html">Contact Us</a>
+          <a href="pages/loans.html">Loans</a>
+          <a href="pages/help.html">FAQ</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="secondary-btn" href="pages/login.html">Sign In</a>
+        </div>
+      </header>
+
+      <main class="homepage-main">
+        <section class="hero-section">
+          <div class="hero-copy">
+            <p class="eyebrow">Banking designed around your everyday needs</p>
+            <h1>Banking that keeps your life in balance.</h1>
+            <p class="lead">
+              Manage your accounts, review spending, transfer money, and stay informed with a simple and
+              secure digital banking experience.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="pages/login.html">Open Online Banking</a>
+              <a class="btn btn-secondary" href="#services">Explore Services</a>
+            </div>
+            <p class="hero-note">A connected banking experience that brings everyday financial activities together in one clear and intuitive place.</p>
+          </div>
+
+          <div class="hero-visual" aria-label="Dashboard preview illustration">
+            <div class="money-board">
+              <div class="money-note">
+                <div class="money-note-pin" aria-hidden="true"></div>
+                <div class="money-note-topline"><span>Money map</span><strong>KU</strong></div>
+                <div class="preview-auth-banner">
+                  <span class="preview-lock-mark" aria-hidden="true">&#9679;</span>
+                  <span id="preview-auth-label">Private overview</span>
+                  <a id="preview-auth-link" href="pages/login.html">Sign in to unlock <span aria-hidden="true">&#8599;</span></a>
+                </div>
+                <span class="money-note-label">Private account overview</span>
+                <strong id="hero-account-preview" class="money-note-title">Sign in to view</strong>
+                <p>Accounts, spending, and transfers in one calm view.</p>
+                <div class="money-note-rule"></div>
+                <small>Everything important, right where you need it.</small>
+              </div>
+              <div class="money-tickers" aria-label="Money overview">
+                <div><span class="ticker-symbol ticker-symbol--in">+</span><strong>Income</strong><small>Track every inflow</small></div>
+                <div><span class="ticker-symbol ticker-symbol--out">−</span><strong>Spending</strong><small>See the pattern</small></div>
+                <div><span class="ticker-symbol ticker-symbol--move">↗</span><strong>Transfers</strong><small>Move with intent</small></div>
+              </div>
+              <div class="mini-graph is-locked" id="preview-activity-chart" aria-label="Sign in to view account activity">
+                <div class="graph-caption"><span>Money rhythm</span><small>Last 5 moments</small></div>
+                <div class="graph-bars">
+                  <div class="bar bar-one"></div>
+                  <div class="bar bar-two"></div>
+                  <div class="bar bar-three"></div>
+                  <div class="bar bar-four"></div>
+                  <div class="bar bar-five"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="services-section" aria-labelledby="services-title">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-dark">Everything you need in one banking experience</p>
+            <h2 id="services-title">Smart services for everyday banking</h2>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card service-card--accounts">
+              <div class="service-card-topline"><div class="service-icon">₹</div><span class="service-live"><i></i> Private preview</span></div>
+              <div class="service-heading-row"><h3>Accounts</h3><strong class="account-total" id="account-total">Sign in to view</strong></div>
+              <p>View checking and savings accounts, monitor balances, and review account activity from one convenient dashboard.</p>
+              <div class="account-meter"><span><i></i></span><small>Available across your accounts</small></div>
+              <a href="pages/accounts.html">Manage</a>
+            </article>
+
+            <article class="service-card service-card--transfers">
+              <div class="transfer-route-visual" aria-label="Transfer route preview">
+                <div class="route-node"><span>CHK</span><strong id="checking-preview">Sign in to view</strong></div>
+                <div class="route-line"><i></i><b>⇢</b><i></i></div>
+                <div class="route-node route-node--gold"><span>SAV</span><strong id="savings-preview">Sign in to view</strong></div>
+              </div>
+              <div class="service-heading-row"><div class="service-title-with-icon"><div class="service-icon">⇄</div><h3>Transfers</h3></div><span class="route-status">Instant route</span></div>
+              <p>Move money between available accounts through a clear transfer and confirmation experience.</p>
+              <a class="service-action-link" href="pages/transfer.html">Transfer Money <span>↗</span></a>
+            </article>
+
+            <article class="service-card service-card--bills">
+              <div class="bill-calendar" aria-label="Bill payment calendar preview">
+                <div class="bill-calendar-head"><span>UPCOMING BILLS</span><strong>••••</strong></div>
+                <div class="bill-calendar-grid"><span>--</span><span>--</span><span>--</span><span>--</span></div>
+                <div class="bill-due-line"><i></i><span id="bill-name-preview">Sign in to view scheduled bills</span><strong id="bill-amount-preview">••••</strong></div>
+              </div>
+              <div class="service-heading-row"><div class="service-title-with-icon"><div class="service-icon">▣</div><h3>Bill Pay</h3></div><span class="bill-status" id="bill-count-preview">Sign in to view</span></div>
+              <p>Organize and review bill payments through an easy-to-use payment management interface.</p>
+              <div class="bill-progress"><span><i></i></span><small id="bill-progress-label">Sign in to view payment status</small><strong id="bill-progress-preview">--</strong></div>
+              <a class="service-action-link" href="pages/bills.html">Pay Bills <span>↗</span></a>
+            </article>
+
+            <article class="service-card service-card--featured">
+              <div class="credit-card-mini" aria-label="Credit card preview">
+                <div class="mini-card-topline"><span class="mini-brand">BANK OF KUBERA</span><span class="mini-edition">SIGNATURE</span></div>
+                <div class="mini-chip"></div>
+                <div class="mini-contactless" aria-label="Contactless enabled">)))</div>
+                <div class="mini-number" id="card-number-preview">•••• •••• •••• ••••</div>
+                <div class="mini-footer">
+                  <span><small>Cardholder</small><span id="cardholder-preview">Sign in to view</span></span>
+                  <span><small>Valid thru</small><span id="card-expiry-preview">••/••</span></span>
+                  <strong>KUBERA</strong>
+                </div>
+              </div>
+              <div class="credit-card-heading"><div><p class="eyebrow eyebrow-dark">Premium control</p><h3>Credit Cards</h3></div><span class="card-status" id="card-status-preview">Sign in to view</span></div>
+              <p>Explore card controls, review spending activity, monitor available credit, and discover benefits through a polished card management experience.</p>
+              <div class="card-benefit-rail"><span>Contactless</span><span>Rewards</span><span>24/7 controls</span></div>
+              <a href="pages/cards.html">Explore Credit Cards</a>
+            </article>
+
+            <article class="service-card service-card--loans">
+              <div class="loan-path-visual" aria-label="Loan options preview">
+                <div class="loan-path-line"></div>
+                <div class="loan-path-item loan-path-item--active"><span>HOME</span><strong>01</strong></div>
+                <div class="loan-path-item"><span>AUTO</span><strong>02</strong></div>
+                <div class="loan-path-item"><span>EDU</span><strong>03</strong></div>
+              </div>
+              <div class="service-heading-row"><div class="service-title-with-icon"><div class="service-icon">▤</div><h3>Loans</h3></div><span class="loan-status">Plan ahead</span></div>
+              <p>Explore personal, home, auto, and education financing information through a structured service experience.</p>
+              <div class="loan-type-rail"><span>Personal</span><span>Home</span><span>Auto</span><span>Education</span></div>
+              <a class="service-action-link" href="pages/loans.html">View Details <span>↗</span></a>
+            </article>
+
+          </div>
+        </section>
+
+        <section class="benefits-section" aria-labelledby="benefits-title">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-dark">Banking that puts clarity first</p>
+            <h2 id="benefits-title">Built for everyday confidence</h2>
+          </div>
+
+          <div class="benefits-grid">
+            <details class="benefit-card">
+              <summary>
+                <span class="benefit-index">01</span>
+                <span class="benefit-symbol" aria-hidden="true">01</span>
+                <span class="benefit-title" role="heading" aria-level="3">Simple Experience</span>
+                <span class="benefit-toggle" aria-hidden="true"></span>
+              </summary>
+              <p>Clear navigation, organized information, and intuitive actions make everyday banking easier to understand.</p>
+            </details>
+            <details class="benefit-card">
+              <summary>
+                <span class="benefit-index">02</span>
+                <span class="benefit-symbol" aria-hidden="true">02</span>
+                <span class="benefit-title" role="heading" aria-level="3">Connected Dashboard</span>
+                <span class="benefit-toggle" aria-hidden="true"></span>
+              </summary>
+              <p>View account summaries, recent activity, quick actions, and important notifications from one central location.</p>
+            </details>
+            <details class="benefit-card">
+              <summary>
+                <span class="benefit-index">03</span>
+                <span class="benefit-symbol" aria-hidden="true">03</span>
+                <span class="benefit-title" role="heading" aria-level="3">Security-Focused Design</span>
+                <span class="benefit-toggle" aria-hidden="true"></span>
+              </summary>
+              <p>Security settings, login activity, account alerts, and support information are organized in one accessible experience.</p>
+            </details>
+            <details class="benefit-card">
+              <summary>
+                <span class="benefit-index">04</span>
+                <span class="benefit-symbol" aria-hidden="true">04</span>
+                <span class="benefit-title" role="heading" aria-level="3">Responsive Access</span>
+                <span class="benefit-toggle" aria-hidden="true"></span>
+              </summary>
+              <p>Use a consistent banking interface across desktop, tablet, and mobile screen sizes.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="preview-section" aria-labelledby="preview-title">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-dark">Your financial overview</p>
+            <h2 id="preview-title">A clear dashboard snapshot</h2>
+          </div>
+
+          <div class="dashboard-preview">
+            <div class="preview-summary">
+              <div class="preview-summary-heading">
+                <span>Account map</span>
+                <span class="preview-summary-state"><i aria-hidden="true"></i> Protected</span>
+              </div>
+              <div class="preview-summary-item">
+                <span>Total account balance</span>
+                <strong id="balance-preview">Sign in to view</strong>
+              </div>
+              <div class="preview-summary-item">
+                <span>Checking account</span>
+                <strong id="checking-summary-preview">Sign in to view</strong>
+              </div>
+              <div class="preview-summary-item">
+                <span>Savings account</span>
+                <strong id="savings-summary-preview">Sign in to view</strong>
+              </div>
+              <div class="preview-summary-item">
+                <span>Credit card summary</span>
+                <strong id="card-summary-preview">Sign in to view</strong>
+              </div>
+              <a class="preview-unlock-link" href="pages/login.html">Sign in to open your dashboard <span aria-hidden="true">&#8599;</span></a>
+            </div>
+
+            <div class="preview-activity">
+              <div class="preview-activity-heading">
+                <div>
+                  <p class="eyebrow eyebrow-dark">Activity stream</p>
+                  <h3>Recent transactions</h3>
+                </div>
+                <span class="preview-protected-tag"><i aria-hidden="true"></i> Private</span>
+              </div>
+              <ul>
+                <li><span>Account activity</span><strong id="activity-preview">Sign in to view</strong></li>
+                <li><span>Recent transactions</span><strong>Protected</strong></li>
+                <li><span>Recent activity</span><strong>Protected</strong></li>
+              </ul>
+              <details class="preview-protection">
+                <summary>Why is this protected?</summary>
+                <p>Account balances and activity are shown only after you sign in.</p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-section" aria-labelledby="cta-title">
+          <div>
+            <p class="eyebrow">Take control of your everyday banking</p>
+            <h2 id="cta-title">Access your accounts and manage everyday financial activity in one place.</h2>
+          </div>
+          <a class="btn btn-primary" href="pages/login.html">Sign In to Online Banking</a>
+        </section>
+      </main>
+
+      <footer class="footer public-footer">
+        <div>
+          <div class="footer-brand-wrap">
+            <div class="footer-brand-mark" aria-label="Bank of Kubera logo">
+              <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+                <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.14)"/>
+                <path d="M20 18h8l10 14V18h8v28h-8L28 32v14h-8V18z" fill="white"/>
+                <path d="M32 10c6 0 11 5 11 11s-5 11-11 11-11-5-11-11 5-11 11-11zm0 6.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" fill="rgba(215,181,109,0.95)"/>
+              </svg>
+            </div>
+            <p class="footer-brand">Bank of Kubera</p>
+          </div>
+          <p class="disclaimer"></p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="pages/about.html">About Us</a>
+          <a href="pages/contact.html">Contact Us</a>
+          <a href="pages/security.html">Security Center</a>
+          <a href="pages/help.html">Help &amp; Support</a>
+          <a href="pages/about.html#privacy">Privacy</a>
+          <a href="pages/about.html#terms">Terms</a>
+          <a href="pages/about.html#accessibility">Accessibility</a>
+        </nav>
+      </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "biller-001",
+    "name": "City Utilities",
+    "category": "Utilities",
+    "accountId": "account-001",
+    "defaultDueDate": "2026-09-25",
+    "amount": 3200,
+    "currency": "INR",
+    "status": "Scheduled"
+  },
+  {
+    "id": "biller-002",
+    "name": "Airtel Broadband",
+    "category": "Internet",
+    "accountId": "account-001",
+    "defaultDueDate": "2026-09-28",
+    "amount": 899,
+    "currency": "INR",
+    "status": "Pending"
+  },
+  {
+    "id": "biller-003",
+    "name": "Health Plus Insurance",
+    "category": "Insurance",
+    "accountId": "account-001",
+    "defaultDueDate": "2026-10-03",
+    "amount": 5400,
+    "currency": "INR",
+    "status": "Active"
+  }
+]
